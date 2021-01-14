@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  body{
+    background-color: black;
+}
+
+h1{
+  color: #ffffff;
+  text-align: center;
+}
+
+.row{
+  margin-left: 8.0px;
+}
+
+h2{
+      color: #ffffff;
+}
+
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.p{
+  color: #ffffff;
+}
