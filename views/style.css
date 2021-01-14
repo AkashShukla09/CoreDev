@@ -11,6 +11,7 @@
 h1{
   color: #ffffff;
   text-align: center;
+  font-size: 400%;
 }
 
 .row{
@@ -47,6 +48,14 @@ i{
 
 .SDP p,h2{
   font-size: 95%;
+}
+.SDP h2{
+  font-weight: 600;
+  font-size:300%;
+}
+.SDP p{
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 .SDP i{
   font-size:300%;
