@@ -324,7 +324,7 @@ i{
 
 
 .card{
-  position: ;
+  position: relative;
   margin-top: 2vw;
   /*margin-left: 2vw;*/
   height: 37vw;
