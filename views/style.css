@@ -6,12 +6,14 @@
 
   body{
     background-color: black;
+    font-family: "Lato";
 }
 
 h1{
   color: #ffffff;
   text-align: center;
   font-size: 400%;
+  font-weight: 300;
 }
 
 .row{
@@ -20,6 +22,7 @@ h1{
 
 h2{
       color: #ffffff;
+      font-weight: 200;
 }
 
 .column {
@@ -63,7 +66,32 @@ i{
 /*Akshat*/
 
 
-
+/*Shinjon*/
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color:#fff;
+    font-size: 150%;
+    padding-bottom:2vh;
+    padding-left:3vh;
+    font-weight: 400;
+}
+.btn:hover,
+.btn:active{
+    border-bottom: 1px solid #F13C31;
+}
+.nav-second:after{
+    display: block;
+    background-color: rgba(211, 210, 210, 0.575);
+    height:1px;
+    content:" ";
+    width:60%;
+    margin:0 auto;
+    margin-top:2vh;
+    padding-left: 2vh; 
+}
 
 /* Akash */
 .tech-slideshow {
