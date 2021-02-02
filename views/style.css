@@ -207,10 +207,15 @@ i{
 /*Akshat*/
 .services{
   margin-top: 2vw;
+  background-image: url(srvice.jpg);
+  /*height:100vh;*/
 }
 
 .container{
   position: absolute;
+  /*background-image: url(srvice.jpg);*/
+  /*margin-top: -50vw;*/
+  /*float: left;*/
   /*transform: translate(-50%, -50%);*/
 }
 
@@ -366,11 +371,11 @@ i{
 
 
 .card{
-  position: ;
-  margin-top: 2vw;
+  /*position: absolute;*/
+  /*margin-top: 2vw;*/
   /*margin-left: 2vw;*/
   height: 37vw;
-  width: 30vw;
+  /*width: 30vw;*/
   border-radius: 15px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.2));
   backdrop-filter: blur(12px);
