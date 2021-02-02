@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twittesr-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  <style type="text/css">
+    /* Type-1 */
+ .multi .carousel-inner .active.left {
+   left: -25%;
+}
+ .multi .carousel-inner .next {
+   left: 25%;
+}
+ .multi .carousel-inner .prev {
+   left: -25%;
+}
+ .multi .carousel-control {
+   width: 4%;
+}
+ .multi .carousel-control.left, .multi .carousel-control.right {
+   margin-left: 15px;
+   background-image: none;
+}
+ 
+  </style>
+  
+</head>
+<body>
+  <!-- Type-1 -->
+<div class="container multi">
+  <h2 class="titles"><span class="pull-right">Type-1</span> Bootstrap 3 Multiple Slide Carousel</h2>
+  <div class="row">
+    <div class="carousel slide" id="myCarousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/e499e4/fff&amp;text=1" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/e477e4/fff&amp;text=2" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=3" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/f4f4f4&amp;text=4" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/f566f5/333&amp;text=5" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-3"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=8" class="img-responsive"></a></div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<script>
+    /* Type-1 */
+$('#myCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+  </script>
+
+</body>
+</html>
