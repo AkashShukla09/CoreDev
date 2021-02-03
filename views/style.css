@@ -208,7 +208,7 @@ i{
 .services{
   margin-top: 2vw;
   background-image: url(./globe-bg-img-darkv1.5e7ab89de2b9d2937905.jpg);
-  height:100vh;
+  /*height:100vh;*/
   width: auto;
 }
 
@@ -375,7 +375,7 @@ i{
   /*position: absolute;*/
   /*margin-top: 2vw;*/
   /*margin-left: 2vw;*/
-  height: 37vw;
+  height: 520px;
   /*width: 30vw;*/
   border-radius: 15px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.2));
