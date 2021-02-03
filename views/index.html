@@ -372,10 +372,10 @@
         		.contain {
 				  display: block;
 				  position: relative;
-				  padding-left: 35px;
-				  margin-bottom: 12px;
+				  padding-left: 5vh;
+				  margin-bottom: 4vh;
 				  cursor: pointer;
-				  font-size: 22px;
+				  font-size: 105%;
 				  -webkit-user-select: none;
 				  -moz-user-select: none;
 				  -ms-user-select: none;
@@ -396,19 +396,20 @@
 				  position: absolute;
 				  top: 0;
 				  left: 0;
-				  height: 25px;
-				  width: 25px;
-				  background-color: #eee;
+				  height: 3vh;
+				  width: 3vh;
+				  background-color: #000;
+                  border:2px solid #F31C13;
 				}
 
 				/* On mouse-over, add a grey background color */
 				.contain:hover input ~ .checkmark {
-				  background-color: #ccc;
+				  background-color: #111;
 				}
 
 				/* When the checkbox is checked, add a blue background */
 				.contain input:checked ~ .checkmark {
-				  background-color: #2196F3;
+				  background-color: #000;
 				}
 
 				/* Create the checkmark/indicator (hidden when not checked) */
@@ -429,7 +430,7 @@
 				  top: 5px;
 				  width: 5px;
 				  height: 10px;
-				  border: solid white;
+				  border: 2px solid #F31C13;
 				  border-width: 0 3px 3px 0;
 				  -webkit-transform: rotate(45deg);
 				  -ms-transform: rotate(45deg);
@@ -439,52 +440,97 @@
 
 
 
-            <h1 style="padding-bottom: 2.5vh;text-align:left;padding-left:8.5vh">Hire Us</h1><center>
+            <h1 style="padding-bottom: 2.5vh;text-align:left;padding-left:8.5vh">Hire Us</h1>
             <form
             action="https://formspree.io/f/xeqpdkkl"
             method="POST" >
+            <div class="checkers">
                 <label class="contain">WebDev
-					  <input type="checkbox" value="WebDev" name="field[]">
-					  <span class="checkmark"></span>
-					</label>
+                    <input type="checkbox" value="WebDev" name="field[]">
+                    <span class="checkmark"></span>
+                  </label>
 
-					<label class="contain">Three
-					  <input type="checkbox" value="3" name="field[]">
-					  <span class="checkmark"></span>
-					</label>
+                  <label class="contain">AppDev
+                    <input type="checkbox" value="AppDev" name="field[]">
+                    <span class="checkmark"></span>
+                  </label>
 
-					<label class="contain">Four
-					  <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                </label>
-                <label>
-                    Your email:
-                    <input type="text" name="_replyto" id="email"><br><br>
-                </label>
-                <label>
-                    Your Name:
-                    <input type="text" name="_name" id="name"><br><br>
-                </label>
-                <label>
-                Any Specifications:
-                <textarea name="message" id="message"></textarea><br>
-                </label>
+                  <label class="contain">UI/UX
+                    <input type="checkbox" value="UI/UX" name="field[]">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="contain">Maintenance
+                      <input type="checkbox" value="Maintenance" name="field[]">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="contain">Videography
+                      <input type="checkbox" value="Videography" name="field[]">
+                      <span class="checkmark"></span>
+                    </label>
+              </label>
+            </div>
+            <div class="right" style="margin-top:-0.5vh">
+                    <label class="_email">
+                        Your email:<br>
+                        <input type="text" name="_replyto" id="email" placeholder="Your Email"><br><br>
+                    </label>
+                    <label class="_name" >
+                        Your Name:<br>
+                        <input type="text" name="_name" id="name" placeholder="Your Name"><br><br>
+                    </label>
+                    <label >
+                    Any Specifications:<br>
+                    <textarea name="message" id="message"></textarea><br>
+                    </label>
+                </div>
+                
             <style>
                 .hireus form{
                     background-color: black;
                     color:rgb(211,210,210);
                     font-size: 150%;
+                    padding-left: 10vh;
                 }
                 input{
-                    display: inline-block;
-                    margin:2vh;
-                    padding:1.5vh;
+                    margin:0.5vh;
                 }
-                
+                .right{
+                    float:left;
+                }
+                .checkers{
+                    display: inline-block;
+                    margin-left:30vh;
+                }
+                textarea{
+                    margin-top: 1vh;
+                    height:6vh;
+                    width:30vh;
+                }
+                input[type=text],textarea{
+                    background-color: black;
+                    color:rgb(211,210,210);
+                    border:none;
+                    border-bottom:2px solid #F31C13;
+                }
+                button[type=submit]{
+                    border:4px solid rgb(211,210,210);
+                    background-color: black;
+                    padding: 1vh 5vh;
+                    color:rgb(211,210,210);
+                    font-weight: 400;
+                    font-size: 100%;
+                    margin-left: 35vh;
+
+                }
+                button[type=submit]:hover{
+                    border:4px solid #F31C13;
+                    color:#F31C13;
+                }
             </style>
         
-            <button type="submit">Send</button></center>
+            <button type="submit" style="display: block;">Send</button>
             </form>
         </div>
         
@@ -506,7 +552,7 @@
 <br>
 <br>
 <br>
-<div class="Contact">
+<div class="Contact" style="margin-top:30vh">
     <div class="container">
             <div class="Contactcard">
                 <h2>AiO Developers</h2>
