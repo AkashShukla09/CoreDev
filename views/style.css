@@ -1,6 +1,7 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .column {
       width: 100%;
+      /*display: inline;*/
     }
   }
 
@@ -17,7 +18,7 @@ h1{
 }
 
 .row{
-  margin-left: 1.0vw;
+  margin-left: 2.0vw;
 }
 
 h2{
@@ -27,8 +28,9 @@ h2{
 
 .column {
     float: left;
-    width: 14vw;
+    width: 15%;
     padding-left: 4%;
+    display: inline-block;
   }
   
   /* Clear floats after the columns */
@@ -44,6 +46,7 @@ h2{
 .SDP{
   color:#fff;
   font-family: "Lato";
+  margin-bottom: 2vw;
 }
 i{
   color:#fff;
@@ -54,14 +57,15 @@ i{
 }
 .SDP h2{
   font-weight: 600;
-  font-size:300%;
+  font-size:3vw;
 }
 .SDP p{
   font-weight: 400;
-  letter-spacing: 0.5px;
+  font-size: 1.3vw;
+  /*letter-spacing: 0.5px;*/
 }
 .SDP i{
-  font-size:300%;
+  font-size:4vw;
 }
 
 
@@ -77,6 +81,8 @@ i{
     margin-left:5vh;
     font-weight: 400;
 }
+
+
 .btn:hover,
 .btn:active,
 .active{
