@@ -572,6 +572,8 @@ button[type=submit]:hover{
 /*Sticky nav*/
 .sticky{
   position: fixed;
+  width:100%;
+  margin:0;
   top:0;
   left:0;
   width:100%;
