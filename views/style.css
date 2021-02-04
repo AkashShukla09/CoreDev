@@ -324,7 +324,6 @@ i{
 
 .Contactcard{
   position: center ;
-  margin-bottom: 10em;
   margin-top: 2vw;
   /*margin-left: 2vw;*/
   height: 20vw;
@@ -404,6 +403,7 @@ i{
   margin-left: 3vh;
   margin-left: 3vh;
   padding-bottom: 4vh;
+  width: 32.26%;
 }
 
 .col {
@@ -648,4 +648,14 @@ button[type=submit]:hover{
  
   color: rgb(207, 207, 207);
   font-family: "Lato";
+}
+
+
+/* Balls */
+* {
+	margin: 5px;
+}
+
+canvas {
+  border: 1px solid black;
 }
