@@ -7,7 +7,9 @@
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <script src="https://use.fontawesome.com/65a05ff4b6.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+            <script src="script.js"></script>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
@@ -15,7 +17,7 @@
 
             <!-- Font Awesome -->
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+            
 
             <title>
                 COREDEV
@@ -35,7 +37,7 @@
     -->
     <body>
         <header style="background-color:black">
-            <nav>
+            <nav class="sticky">
                 <div class="row">
                     
                     <ul class="main-nav js--main-nav">
@@ -48,126 +50,12 @@
                 </div>
             </nav>
         </header>
-        <script>
-        $(document).ready(function(){
-        /*Sticky Navigation*/
-        $('.js--section-features').waypoint(function(direction) {
-            if (direction == "down") {
-                $('nav').addClass('sticky'); 
-            } else {
-                $('nav').removeClass('sticky');
-            }
-        }, {
-        offset: '70px;'
-        });
-        
-        /*Button directing*/
-        $('.js--scroll-to-plan').click(function(){
-            $('html,body').animate({scrollTop:$('.js--section-plans').offset().top},1000);
-        });
-        $('.js--scroll-to-start').click(function(){
-            $('html,body').animate({scrollTop:$('.js--section-features').offset().top},1000);
-        });
-        
-        /*Navigation*/
-        $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({scrollTop: target.offset().top}, 1000);
-                return false;
-            }
-            }
-        });
-        });
-        /*Mobile Nav*/
-        $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon i');
-        
-        nav.slideToggle(200);
-        
-        if (icon.hasClass('ion-navicon')) {
-            icon.addClass('ion-ios-close-empty');
-            icon.removeClass('ion-navicon');
-        } else {
-            icon.addClass('ion-navicon');
-            icon.removeClass('ion-ios-close-empty');
-        }        
-    });
-    });
-</script>
         <style>
         /*Main nav*/
-        .main-nav{
-            float:left;
-            list-style: none;
-            margin-top: 50px;
-        }
-
-        .main-nav li{
-            display: inline-block;
-            margin-left: 40px;
-        }
-
-        .main-nav li a:link,
-        .main-nav li a:visited{
-            color:#fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 90%;
-            padding: 8px 0;
-            border-bottom: 2px solid transparent;
-            -webkit-transition: border-bottom 0.3s;
-            transition: border-bottom 0.3s;
-        }
-
-        .main-nav li a:hover,
-        .main-nav li a:active{
-            border-bottom: 2px solid #F31C13;
-        }
-
-        /* Mobile Main nav*/
-        .mobile-nav-icon{
-            float:right;
-            cursor: pointer;
-            margin-top: 15px;
-            margin-bottom:25px;
-            margin-right: 20px;
-            display:none;
-        }
-
-        .mobile-nav-icon i{
-            font-size:200%;
-            color:#fff;
-        }
-        /*Sticky nav*/
-        .sticky{
-            position: fixed;
-            top:0;
-            left:0;
-            width:100%;
-            background-color: rgba(247, 247, 247, 0.95);
-            -webkit-box-shadow: 0 2px 2px #e6e6e6;
-            box-shadow: 0 2px 2px #e6e6e6;
-            z-index:9999;
-        }
-        .sticky .main-nav{margin-top: 14px;}
-
-        .sticky .Logo-black{display:block;}
-
-        .sticky .Logo{display:none;}
-
-        .sticky .main-nav li a:link,
-        .sticky .main-nav li a:visited{
-            color:#555;
-            padding: 18px 0;
-        }
+        
 
         </style>
-        <div class="header">
+        <div class="header" style="padding-top:6.2vh;">
                 <img src="LandingPage.png">
                 <div class="box">
                     <h1 style="text-align: left; margin-left: 6vw; font-size: 4.2vw;">CoreDev</h1>
@@ -176,6 +64,7 @@
          </div>
          
          <style>
+<<<<<<< HEAD
             .header{
                 margin-bottom: 10vh;
                 /*height: 100vh;    */
@@ -193,6 +82,9 @@
             .box{
                 padding-top: 16%;
             }
+=======
+            
+>>>>>>> fedf14f1b7f305990bbb86be32be968be0b3918c
         </style>
         <div class="SDP" id="SDP" style="margin-top: 22vw;">
             <h1 style="padding-bottom: 2.5vh;text-align:left;margin-left: 5.2vw; font-size: 4vw;"> We Simpify Software Development Process</h1>
@@ -239,7 +131,7 @@
                 <a href="#tech" class="btn" id="btn4">App Development</a></center></div>
                 <script>
                     var header = document.getElementById("nav-second");
-                    console.log(header);
+                    /*console.log(header);*/
                     var btns = header.getElementsByClassName("btn");
                     for (var i = 0; i < btns.length; i++) {
                     btns[i].addEventListener("click", function() {
@@ -420,7 +312,7 @@
                        </div>
                        <div class="item">
                           <div class="card">
-                            <img src="Maintain.svg">
+                            <img src="Maintain.png">
                             <h2>Maintenance</h2>
                             Maintaining a web application is as important as building one. And we are here for that too.
                           </div>
@@ -539,61 +431,6 @@
         </div>
         <div class="hireus" id="hireus">
 
-        	<style type="text/css">
-        		.contain {
-				  display: block;
-				  position: relative;
-				  padding-left: 5vh;
-				  margin-bottom: 4vh;
-				  cursor: pointer;
-				  font-size: 105%;
-				  -webkit-user-select: none;
-				  -moz-user-select: none;
-				  -ms-user-select: none;
-				  user-select: none;
-				}
-				.contain input {
-				  position: absolute;
-				  opacity: 0;
-				  cursor: pointer;
-				  height: 0;
-				  width: 0;
-				}
-				.checkmark {
-				  position: absolute;
-				  top: 0;
-				  left: 0;
-				  height: 3vh;
-				  width: 3vh;
-				  background-color: #000;
-                  border:2px solid #F31C13;
-				}
-				.contain:hover input ~ .checkmark {
-				  background-color: #111;
-				}
-				.contain input:checked ~ .checkmark {
-				  background-color: #000;
-				}
-				.checkmark:after {
-				  content: "";
-				  position: absolute;
-				  display: none;
-				}
-				.contain input:checked ~ .checkmark:after {
-				  display: block;
-				}
-				.contain .checkmark:after {
-				  left: 7px;
-				  top: 4px;
-				  width: 5px;
-				  height: 10px;
-				  border: 2px solid #F31C13;
-				  border-width: 0 3px 3px 0;
-				  -webkit-transform: rotate(45deg);
-				  -ms-transform: rotate(45deg);
-				  transform: rotate(45deg);
-				}
-        	</style>
 
 
 
@@ -644,55 +481,7 @@
                     <textarea name="message" id="message" placeholder="We'd like to know more"></textarea><br>
                     </label>
                 </div>
-                
-            <style>
-                .hireus form{
-                    background-color: black;
-                    color:rgb(211,210,210);
-                    font-size: 150%;
-                    padding-left: 10vh;
-                    margin: 0;
-                    display: inline-block;
-                }
-                input{
-                    margin:0.5vh;
-                }
-                .right{
-                    float:left;
-                }
-                .checkers{
-                    display: inline-block;
-                    margin-left:30vh;
-                }
-                textarea{
-                    margin-top: 1vh;
-                    height:6vh;
-                    width:30vh;
-                    resize: none;
-                    font-size: 60%;
-                    font-family: 'Lato';
-                }
-                input[type=text],textarea{
-                    background-color: black;
-                    color:rgb(211,210,210);
-                    border:none;
-                    border-bottom:2px solid #F31C13;
-                }
-                button[type=submit]{
-                    border:4px solid rgb(211,210,210);
-                    background-color: black;
-                    padding: 1vh 5vh;
-                    color:rgb(211,210,210);
-                    font-weight: 400;
-                    font-size: 100%;
-                    margin-left: 35vh;
-
-                }
-                button[type=submit]:hover{
-                    border:4px solid #F31C13;
-                    color:#F31C13;
-                }
-            </style>
+               
         
             <button type="submit" style="display: block;">Send</button>
             </form>
@@ -719,7 +508,7 @@
 <br>
 <br>
 <br>
-<div class="Contact" style="margin-top:30vh">
+<div class="Contact" style="margin-top:30vh;margin-bottom: 10vh;">
     <div class="container">
             <div class="Contactcard">
                 <h2>AiO Developers</h2>
@@ -728,8 +517,162 @@
         </div>
     </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<canvas width="1500vw" height="350"></canvas>
+<p>Press space to reset or click and hold to add more balls.</p>
+<script>
+var canvas = document.querySelector('canvas');
+var pen = canvas.getContext('2d');
+const W = canvas.width;
+const H = canvas.height;
 
+var numBalls = 30;
+var grav = [0,-0.1];
+
+function Ball(x,y,dx,dy,r) {
+	this.x = x;
+	this.y = y;
+	this.dx = dx;
+	this.dy = dy;
+	this.r = r;
+	this.color = 'hsl('+(Math.random()*360)+',90%,50%)';
+	
+	this.draw = function() {
+		pen.fillStyle = this.color;
+		pen.beginPath();
+		pen.arc(this.x,this.y,this.r,0,2*Math.PI);
+		pen.fill();
+	}
+	
+	this.update = function() {
+		this.x += this.dx;
+		this.y += this.dy;
+		this.dx += grav[0];
+		this.dy -= grav[1];
+		if(this.x > W - this.r) {
+			this.x = W - this.r;
+			this.dx *= -1;
+		} else if(this.x < this.r) {
+			this.x = this.r;
+			this.dx *= -1;
+		}
+		if(this.y > H - this.r) {
+			this.y = H - this.r;
+			this.dy *= -0.7;
+		} else if(this.y < this.r) {
+			this.y = this.r + 1;
+			this.dy *= -0.7;
+		}
+		this.draw();
+	}
+}
+
+
+var balls = [];
+
+function reset() {
+	balls = [];
+	for(var i=0 ; i < numBalls ; i++) {
+		var x = Math.random()*W;
+		var y = Math.random()*H;
+		var r = Math.random()*20 + 10;
+		balls.push(new Ball(x,y, Math.random()*10 - 5, Math.random()*10 - 5,r));
+	}
+}
+reset();
+
+window.addEventListener('keydown',function(key) {
+	if(key.code === 'Space') {
+		reset();
+	}
+});
+
+var mouseDown = false;
+var cooldown = 0;
+var mouse = {
+	x: undefined,
+	y: undefined
+};
+
+canvas.addEventListener('mousedown',function(event) {
+	mouseDown = true;
+});
+canvas.addEventListener('mouseup', function(event) {
+	mouseDown = false;
+});
+canvas.addEventListener('mousemove',function(event) {
+	mouse.x = event.x - 15;
+	mouse.y = event.y - 15;
+});
+
+function animate() {
+	pen.clearRect(0,0,W,H);
+	cooldown++;
+	if(mouseDown && cooldown > 2) {
+		var r = Math.random()*20 + 10;
+		balls.push(new Ball(mouse.x,mouse.y, Math.random()*10 - 5, Math.random()*10 - 5,r));
+		cooldown = 0;
+	}
+	for(var ball of balls) {
+		ball.update();
+		for(var ball2 of balls) { //Not the most efficient way to check every pair, but this is just a rough version
+			if(ball !== ball2) {
+				var collision = checkCollision(ball, ball2);
+				if(collision[0]) {
+					adjustPositions(ball,ball2,collision[1]);
+					resolveCollision(ball,ball2);
+				}
+			}
+		} 
+	}
+	requestAnimationFrame(animate);
+}
+
+animate();
+
+function checkCollision(ballA, ballB) {
+	var rSum = ballA.r + ballB.r;
+	var dx = ballB.x - ballA.x;
+	var dy = ballB.y - ballA.y;
+	return [rSum*rSum > dx*dx + dy*dy,rSum-Math.sqrt(dx*dx+dy*dy)];
+}
+
+function resolveCollision(ballA, ballB) {
+	var relVel = [ballB.dx - ballA.dx,ballB.dy - ballA.dy];
+	var norm = [ballB.x - ballA.x, ballB.y - ballA.y];
+	var mag = Math.sqrt(norm[0]*norm[0] + norm[1]*norm[1]);
+	norm = [norm[0]/mag,norm[1]/mag];
+	
+	var velAlongNorm = relVel[0]*norm[0] + relVel[1]*norm[1];
+	if(velAlongNorm > 0)
+		return;
+	
+	var bounce = 0.7;
+	var j = -(1 + bounce) * velAlongNorm;
+	j /= 1/ballA.r + 1/ballB.r;
+	
+	var impulse = [j*norm[0],j*norm[1]];
+	ballA.dx -= 1/ballA.r * impulse[0];
+	ballA.dy -= 1/ballA.r * impulse[1];
+	ballB.dx += 1/ballB.r * impulse[0];
+	ballB.dy += 1/ballB.r * impulse[1];
+}
+
+function adjustPositions(ballA,ballB,depth) { //Inefficient implementation for now
+	const percent = 0.2;
+	const slop = 0.01;
+	var correction = (Math.max(depth - slop, 0) / (1/ballA.r + 1/ballB.r)) * percent;
+	
+	var norm = [ballB.x - ballA.x, ballB.y - ballA.y];
+	var mag = Math.sqrt(norm[0]*norm[0] + norm[1]*norm[1]);
+	norm = [norm[0]/mag,norm[1]/mag];
+	correction = [correction*norm[0],correction*norm[1]];
+	ballA.x -= 1/ballA.r * correction[0];
+	ballA.y -= 1/ballA.r * correction[1];
+	ballB.x += 1/ballB.r * correction[0];
+	ballB.y += 1/ballB.r * correction[1];
+}
+</script>
 
     </body>
 </html>

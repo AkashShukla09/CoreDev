@@ -409,6 +409,7 @@ i{
   margin-left: 3vh;
   margin-left: 3vh;
   padding-bottom: 4vh;
+  width: 32.26%;
 }
 
 .col {
@@ -429,7 +430,190 @@ i{
     }
 }
 
+.hireus form{
+  background-color: black;
+  color:rgb(211,210,210);
+  font-size: 150%;
+  padding-left: 10vh;
+  margin: 0;
+  display: inline-block;
+}
+input{
+  margin:0.5vh;
+}
+.right{
+  float:left;
+}
+.checkers{
+  display: inline-block;
+  margin-left:30vh;
+}
+textarea{
+  margin-top: 1vh;
+  height:6vh;
+  width:30vh;
+  resize: none;
+  font-size: 60%;
+  font-family: 'Lato';
+}
+input[type=text],textarea{
+  background-color: black;
+  color:rgb(211,210,210);
+  border:none;
+  border-bottom:2px solid #F31C13;
+}
+button[type=submit]{
+  border:4px solid rgb(211,210,210);
+  background-color: black;
+  padding: 1vh 5vh;
+  color:rgb(211,210,210);
+  font-weight: 400;
+  font-size: 100%;
+  margin-left: 35vh;
 
+}
+button[type=submit]:hover{
+  border:4px solid #F31C13;
+  color:#F31C13;
+}
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 5vh;
+  margin-bottom: 4vh;
+  cursor: pointer;
+  font-size: 105%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3vh;
+  width: 3vh;
+  background-color: #000;
+          border:2px solid #F31C13;
+}
+.contain:hover input ~ .checkmark {
+  background-color: #111;
+}
+.contain input:checked ~ .checkmark {
+  background-color: #000;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.contain input:checked ~ .checkmark:after {
+  display: block;
+}
+.contain .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: 2px solid #F31C13;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.header{
+  margin-bottom: 10vh;
+  /*height: 100vh;    */
+}
+.main-nav{
+  float:left;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #F31C13;
+}
+
+/* Mobile Main nav*/
+.mobile-nav-icon{
+  float:right;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom:25px;
+  margin-right: 20px;
+  display:none;
+}
+
+.mobile-nav-icon i{
+  font-size:200%;
+  color:#fff;
+}
+/*Sticky nav*/
+.sticky{
+  position: fixed;
+  width:100%;
+  margin:0;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: rgba(187, 187, 187, 0.726);
+  -webkit-box-shadow: 0 2px 2px #3f3f3fab;
+  box-shadow: 0 2px 2px #3f3f3fab;
+  backdrop-filter: blur(10px);
+  z-index:9999;
+}
+.sticky .main-nav{margin-top: 14px;}
+
+.sticky .Logo-black{display:block;}
+
+.sticky .Logo{display:none;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+  color:rgb(255, 255, 255);
+  padding: 15px 0;
+}
+.header img{
+  height:95vh;
+  width:auto;
+  float:right;
+  padding-right: 5vh;
+}
+.header h2{
+  color:white;
+  font-weight: 300;
+  font-size:200%;
+}
+.box{
+  padding-top: 35vh;
+}
 /* Akash contact us  */
 
 .Contact {
@@ -472,4 +656,14 @@ i{
  
   color: rgb(207, 207, 207);
   font-family: "Lato";
+}
+
+
+/* Balls */
+* {
+	margin: 5px;
+}
+
+canvas {
+  border: 1px solid black;
 }
