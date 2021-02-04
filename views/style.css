@@ -324,6 +324,7 @@ i{
 
 .Contactcard{
   position: center ;
+  margin-bottom: 10em;
   margin-top: 2vw;
   /*margin-left: 2vw;*/
   height: 20vw;
