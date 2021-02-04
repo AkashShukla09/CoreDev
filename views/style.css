@@ -402,13 +402,18 @@ i{
 
 .col:first-child { margin-left: 0; } 
 
-
+.span-1-of-2{
+  width:45%;
+}
 .span-1-of-3 {
     width: 32.26%; 
 }
 @media only screen and (max-width: 720px) {   
     .span-1-of-3 {
         width: 100%;
+    }
+    .span-1-of-2{
+      width:100%;
     }
 }
 
