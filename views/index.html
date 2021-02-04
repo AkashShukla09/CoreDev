@@ -7,7 +7,9 @@
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <script src="https://use.fontawesome.com/65a05ff4b6.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+            <script src="script.js"></script>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
@@ -15,7 +17,7 @@
 
             <!-- Font Awesome -->
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+            
 
             <title>
                 COREDEV
@@ -35,7 +37,7 @@
     -->
     <body>
         <header style="background-color:black">
-            <nav>
+            <nav class="sticky">
                 <div class="row">
                     
                     <ul class="main-nav js--main-nav">
@@ -48,57 +50,6 @@
                 </div>
             </nav>
         </header>
-        <script>
-        $(document).ready(function(){
-        /*Sticky Navigation*/
-        $('.js--section-features').waypoint(function(direction) {
-            if (direction == "down") {
-                $('nav').addClass('sticky'); 
-            } else {
-                $('nav').removeClass('sticky');
-            }
-        }, {
-        offset: '70px;'
-        });
-        
-        /*Button directing*/
-        $('.js--scroll-to-plan').click(function(){
-            $('html,body').animate({scrollTop:$('.js--section-plans').offset().top},1000);
-        });
-        $('.js--scroll-to-start').click(function(){
-            $('html,body').animate({scrollTop:$('.js--section-features').offset().top},1000);
-        });
-        
-        /*Navigation*/
-        $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({scrollTop: target.offset().top}, 1000);
-                return false;
-            }
-            }
-        });
-        });
-        /*Mobile Nav*/
-        $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon i');
-        
-        nav.slideToggle(200);
-        
-        if (icon.hasClass('ion-navicon')) {
-            icon.addClass('ion-ios-close-empty');
-            icon.removeClass('ion-navicon');
-        } else {
-            icon.addClass('ion-navicon');
-            icon.removeClass('ion-ios-close-empty');
-        }        
-    });
-    });
-</script>
         <style>
         /*Main nav*/
         .main-nav{
@@ -239,7 +190,7 @@
                 <a href="#tech" class="btn" id="btn4">App Development</a></center></div>
                 <script>
                     var header = document.getElementById("nav-second");
-                    console.log(header);
+                    /*console.log(header);*/
                     var btns = header.getElementsByClassName("btn");
                     for (var i = 0; i < btns.length; i++) {
                     btns[i].addEventListener("click", function() {
