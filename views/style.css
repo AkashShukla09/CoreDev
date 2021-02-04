@@ -592,7 +592,7 @@ button[type=submit]:hover{
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
   color:rgb(255, 255, 255);
-  padding: 16px 0;
+  padding: 15px 0;
 }
 .header img{
   height:95vh;
