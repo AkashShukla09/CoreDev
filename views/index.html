@@ -34,6 +34,139 @@
         4. Navbar-Akshat & Shinjon
     -->
     <body>
+        <header style="background-color:black">
+            <nav>
+                <div class="row">
+                    
+                    <ul class="main-nav js--main-nav">
+                    <li><a href="#SDP">Our Workflow</a></li>
+                    <li><a href="#tech">Technlogies We Use</a></li>
+                    <li><a href="#services">Our Core Services</a></li>
+                    <li><a href="#hireus">Hire Us</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-bars" style="color: #fff;"></i></a>
+                </div>
+            </nav>
+        </header>
+        <script>
+        $(document).ready(function(){
+        /*Sticky Navigation*/
+        $('.js--section-features').waypoint(function(direction) {
+            if (direction == "down") {
+                $('nav').addClass('sticky'); 
+            } else {
+                $('nav').removeClass('sticky');
+            }
+        }, {
+        offset: '70px;'
+        });
+        
+        /*Button directing*/
+        $('.js--scroll-to-plan').click(function(){
+            $('html,body').animate({scrollTop:$('.js--section-plans').offset().top},1000);
+        });
+        $('.js--scroll-to-start').click(function(){
+            $('html,body').animate({scrollTop:$('.js--section-features').offset().top},1000);
+        });
+        
+        /*Navigation*/
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({scrollTop: target.offset().top}, 1000);
+                return false;
+            }
+            }
+        });
+        });
+        /*Mobile Nav*/
+        $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        
+        nav.slideToggle(200);
+        
+        if (icon.hasClass('ion-navicon')) {
+            icon.addClass('ion-ios-close-empty');
+            icon.removeClass('ion-navicon');
+        } else {
+            icon.addClass('ion-navicon');
+            icon.removeClass('ion-ios-close-empty');
+        }        
+    });
+    });
+</script>
+        <style>
+        /*Main nav*/
+        .main-nav{
+            float:left;
+            list-style: none;
+            margin-top: 50px;
+        }
+
+        .main-nav li{
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .main-nav li a:link,
+        .main-nav li a:visited{
+            color:#fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            -webkit-transition: border-bottom 0.3s;
+            transition: border-bottom 0.3s;
+        }
+
+        .main-nav li a:hover,
+        .main-nav li a:active{
+            border-bottom: 2px solid #F31C13;
+        }
+
+        /* Mobile Main nav*/
+        .mobile-nav-icon{
+            float:right;
+            cursor: pointer;
+            margin-top: 15px;
+            margin-bottom:25px;
+            margin-right: 20px;
+            display:none;
+        }
+
+        .mobile-nav-icon i{
+            font-size:200%;
+            color:#fff;
+        }
+        /*Sticky nav*/
+        .sticky{
+            position: fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background-color: rgba(247, 247, 247, 0.95);
+            -webkit-box-shadow: 0 2px 2px #e6e6e6;
+            box-shadow: 0 2px 2px #e6e6e6;
+            z-index:9999;
+        }
+        .sticky .main-nav{margin-top: 14px;}
+
+        .sticky .Logo-black{display:block;}
+
+        .sticky .Logo{display:none;}
+
+        .sticky .main-nav li a:link,
+        .sticky .main-nav li a:visited{
+            color:#555;
+            padding: 18px 0;
+        }
+
+        </style>
         <div class="header">
                 <img src="LandingPage.png">
                 <div class="box">
@@ -61,7 +194,7 @@
                 padding-top: 35vh;
             }
         </style>
-        <div class="SDP">
+        <div class="SDP" id="SDP">
             <h1 style="padding-bottom: 2.5vh;text-align:left;padding-left:8.5vh"> We Simpify Software Development Process</h1>
 
             <div class="row">
@@ -259,7 +392,7 @@
 
 
         <!-- Akshat -->
-        <div class="services" style="margin-bottom: 15vh;">
+        <div class="services" id="services" style="margin-bottom: 15vh;">
             <!-- <div class="container"> -->
                 <h1 style="padding-bottom: 2.5vh;text-align:left;padding-left:8.5vh">Our Core Services</h1>
                 <div id="exampleSlider">
@@ -404,7 +537,7 @@
                 <li class="yellow"></li>
             </ul> -->
         </div>
-        <div class="hireus">
+        <div class="hireus" id="hireus">
 
         	<style type="text/css">
         		.contain {
