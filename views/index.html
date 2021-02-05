@@ -50,7 +50,7 @@
             </nav>
         </header>-->
         <style>
-            body {
+            /*body {
               margin: 0;
               font-family: Arial, Helvetica, sans-serif;
             }
@@ -111,12 +111,12 @@
                 text-align: left;
                 
               }
-            }
+            }*/
             </style>
             </head>
             <body>
             
-            <div class="topnav" id="myTopnav">
+            <!-- <div class="topnav" id="myTopnav">
                 <a href="#header" class="active">Home</a>
                 <a href="#SDP" >Our Workflow</a>
                 <a href="#tech">Technlogies We Use</a>
@@ -137,8 +137,125 @@
                 x.className = "topnav";
               }
             }
-            </script>
+            </script> -->
         
+
+
+
+
+            <link rel="stylesheet" type="text/css" href="n.css">
+            <style type="text/css">
+                .site-navbar ul li a{
+                    color: #f2f2f2;
+                    /*background: #FFF;*/
+                    padding: 12px 17px;
+                    margin: 12px;
+                    /*font-family: 'OpenSansBold', sans-serif;*/
+                    /* border: 3px solid #31302B; */
+                    font-size: 14px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    /* border-radius: 2px; */
+                    display: inline-block;
+                    text-align: center;
+                    cursor: pointer;
+                    /* box-shadow: inset 0 0 0 0 #31302B; */
+                    -webkit-transition: all ease 0.8s;
+                    -moz-transition: all ease 0.8s;
+                    transition: all ease 0.8s;
+                }
+                .site-navbar ul li a:hover {
+                    box-shadow: inset 208px 0 0 0 #F31C13;
+                    /*border: 2px solid #F31C13;*/
+                    color: black;
+                }
+                .site-navbar ul li a:active {
+                    background: #F31C13;
+                    color: black;
+                }
+                @media screen and (max-width: 900px) {
+                    .site-navbar ul li:hover {
+                    background-color: #F31C13 !important;
+                  }
+                        }
+            </style>    
+
+
+
+
+            <header class="header-area">
+              <!-- site-navbar start -->
+              <div class="navbar-area">
+                <div class="container2">
+                  <nav class="site-navbar">
+                    <!-- site logo -->
+                    <a href="#home" class="site-logo"><span style="color: #F31C13;">Core</span><span style="color: #f2f2f2;">Dev</span></a>
+
+                    <!-- site menu/nav -->
+                    <ul>
+                      <li><a href="#header" >Home</a></li>
+                      <li><a href="#SDP">Our Workflow</a></li>
+                      <li><a href="#tech">Technlogies We Use</a></li>
+                      <li><a href="#services">Our Core Services</a></li>
+                      <li><a href="#hireus">Hire Us</a></li>
+                    </ul>
+
+                    <!-- nav-toggler for mobile version only -->
+                    <button class="nav-toggler">
+                      <span></span>
+                    </button>
+                  </nav>
+                </div>
+              </div><!-- navbar-area end -->
+
+              
+            </header>
+            <script type="text/javascript">
+                // define all UI variable
+                const navToggler = document.querySelector('.nav-toggler');
+                const navMenu = document.querySelector('.site-navbar ul');
+                const navLinks = document.querySelectorAll('.site-navbar a');
+
+                // load all event listners
+                allEventListners();
+
+                // functions of all event listners
+                function allEventListners() {
+                  // toggler icon click event
+                  navToggler.addEventListener('click', togglerClick);
+                  // nav links click event
+                  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+                }
+
+                // togglerClick function
+                function togglerClick() {
+                  navToggler.classList.toggle('toggler-open');
+                  navMenu.classList.toggle('open');
+                }
+
+                // navLinkClick function
+                function navLinkClick() {
+                  if(navMenu.classList.contains('open')) {
+                    navToggler.click();
+                  }
+                }
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="header" style="padding-top:6.2vh;" id="header">
                 <img src="LandingPage.png">
                 <div class="box">
@@ -427,7 +544,7 @@
                        <div class="item">
                           <div class="card">
                               <img src="video.png" align="center" style="margin-top: 3vw; width: 21vw;" >
-                            <h2 style="margin-top: 6vw;">Videography</h2>
+                            <h2 style="margin-top: 4.2vw;">Videography</h2>
                             <p>Marketing has also become our niche as we grow day by <br>day in the vivid world of videography.</p>
                           </div>
                        </div>
