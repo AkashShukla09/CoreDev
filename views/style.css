@@ -431,14 +431,17 @@ i{
     }
 }
 
-
 .hireus form{
+  color:rgb(211, 210, 210);
+  
+}
+/*.hireus form{
   background-color: black;
   color:rgb(211,210,210);
   font-size: 150%;
   padding-left: 10vh;
   margin: 0;
-  display: inline-block;
+  display: block;
 
 }
 input{
@@ -450,7 +453,7 @@ input{
 .checkers{
   display: inline-block;
   margin-left:30vh;
-}
+}*/
 textarea{
   margin-top: 1vh;
   height:6vh;
@@ -673,16 +676,24 @@ button[type=submit]:hover{
 canvas {
   border: 1px solid black;
 } */
-
+.clearfix{zoom: 1}
+.clearfix:after{
+    content:'.';
+    display:block;
+    clear:both;
+    height:0;
+    visibility: hidden;
+}
 
 /* Akash our work */
 .OurWork{
-    margin-top:"70vw";
-    margin-bottom:"200vw";
+    margin-top:10vw;
+    margin-bottom:50vw;
 }
 
 .OurWorkcard{
   position: center ;
+  display: inline-block;
   margin-top: 2vw;
   margin-left: 20vw;
   height: 35vw;
@@ -697,3 +708,10 @@ canvas {
   overflow: hidden;
 
 }
+canvas{ display: block; vertical-align: bottom; }
+  /* ---- particles.js container ---- / #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000;  } / ---- stats.js ---- */ 
+  .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } 
+  .js-count-particles{ font-size: 1.1em; } #stats, 
+  .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } 
+  #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } 
+  .count-particles{ border-radius: 0 0 3px 3px; 
