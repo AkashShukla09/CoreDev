@@ -87,7 +87,7 @@ i{
 .btn:hover,
 .btn:active,
 .active{
-    border-bottom: 1px solid #F13C31;
+    border-bottom: 2px solid #F13C31;
     color:#F13C31;
 }
 .nav-second:after{
