@@ -59,6 +59,13 @@
               padding-left: 5vw;
               overflow: hidden;
               background-color: rgb(0, 0, 0);
+              position: fixed;
+  width:100%;
+  margin:0;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:999;
             }
             
             .topnav a {
@@ -80,7 +87,7 @@
             .topnav .icon:hover{
                 border:4px solid transparent;
             }
-            .topnav a.active {
+            .topnav a.btnactive {
               border:4px solid #F31C13;
               color: white;
             }
@@ -310,7 +317,7 @@
                 padding-top: 16%;
             }
         </style>
-        <div class="SDP" id="SDP" style="margin-top: 26vw;">
+        <div class="SDP" id="SDP" style="margin-top: 22vw;">
             <h1 style="padding-bottom: 2.5vh;text-align:left;margin-left: 5.2vw; font-size: 4vw;"> We Simpify Software Development Process</h1>
 
             <div class="row">
@@ -517,28 +524,28 @@
                           <div class="card">
                               <img src="services-web-development.svg" >
                               <h2>Web Development</h2>
-                              <p style="margin-left: 1vw;">We aim to build rich custom-made interfaces and <br>websites to offer the consumers with the best possible <br>experience.</p>
+                              <h5>We aim to build rich custom-made interfaces and<br> websites to offer the consumers with the best<BR> possible experience.</h5>                         
                             </div>
                        </div>
                        <div class="item">
                           <div class="card">
-                            <img src="App.png" style="margin-top: 3vw; width: 21vw;">
-                            <h2 style="margin-top: 8vw;">Mobile App Development</h2>
-                            <p>We put our expertise in App Development to use while <br>developing the optimal app for every need of yours.</p>
+                            <img src="App.png" >
+                            <h2>Mobile App Development</h2>
+                            We put our expertise in App Development to use while developing the optimal app for every need of yours.
                           </div>
                        </div>
                        <div class="item">
                           <div class="card">
-                              <img src="UI-UX.svg" style="margin-top: 0vw;">
-                            <h2 style="margin-top: 2.2vw;">UI/UX</h2>
-                            <p>Look and feel has grown important with the passing day, <br>and what better way to contribute to it than UI/UX.</p>
+                              <img src="UI-UX.svg" >
+                            <h2>UI/UX</h2>
+                            Look and feel has grown important with the passing day, and what better way to contribute to it than UI/UX.
                           </div>
                        </div>
                        <div class="item">
                           <div class="card">
                             <img src="Maintain.png">
-                            <h2 style="margin-top: 4vw;">Maintenance</h2>
-                            <p>Maintaining a web application is as important as building <br>one. And we are here for that too.</p>
+                            <h2>Maintenance</h2>
+                            Maintaining a web application is as important as building one. And we are here for that too.
                           </div>
                        </div>
                        <div class="item">
@@ -552,32 +559,21 @@
                            .card h2{
                                font-weight: 300;
                                font-size:2.5vw;
-                               margin-top: 3.5vw;
+                               margin-top: 20%;
                            }
                            .card img{
-                                width:20vw;
+                                width:18vw;
                                 height:auto;
-                                /*padding-top:6vh;*/
-                                /*padding-left:9vh;*/
-                                display: block;
-                                margin-left: auto;
-                                margin-right: auto;
-                                margin-top: 2.5vw;
-                                /*margin: 0;*/
+                                padding-top:6vh;
+                                padding-left:9vh;
+                                margin: 0;
                            }
                            .card {
-                               /*font-size:1.25vw;*/
+                               font-size:1.25vw;
                                font-weight: 300;
                                text-align: center;
                                overflow-x: hidden;
                                align-items: center;
-                           }
-                           .card p{
-                                font-size: 0.1vw;
-                                margin-left: 1vw;
-                                /*text-align: justify;*/
-                                color: #fff;
-                                font-family: lato;
                            }
                        </style>
                    </div>
