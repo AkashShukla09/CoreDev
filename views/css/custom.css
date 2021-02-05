@@ -47,7 +47,7 @@ html h2 {
     width: 40%;
   }
   .card {
-    height: 50vw;
+    height: 38vw;
     /*width: 80%;*/
   }
 }
@@ -56,7 +56,7 @@ html h2 {
     width: 33.3333%;
   }
   .card {
-    height: 50vw;
+    height: 38vw;
     /*width: 80%;*/
   }
 }
@@ -67,7 +67,7 @@ html h2 {
     /*margin: 0 2vw;*/
   }
   .card {
-    height: 50vw;
+    height: 38vw;
     /*width: 80%;*/
   }
 }
@@ -77,12 +77,12 @@ html h2 {
     margin-right: 2vw;*/
   }
   #exampleSlider .MS-content .item {
-    width: 70%;
+    width: 60%;
     /*height: 50vw;*/
 
   }
   .card {
-    height: 50vw;
+    height: 40vw;
     /*width: 80%;*/
   }
   .card h2{
@@ -93,12 +93,13 @@ html h2 {
   }
 }
 #exampleSlider .MS-content .item p {
-  font-size: 30px;
+  font-size: 1.2vw;
   text-align: center;
   line-height: 1;
   vertical-align: middle;
-  margin: 0;
-  padding: 10px 0;
+  white-space: nowrap;
+  /*margin: 0;*/
+  /*padding: 10px 0;*/
 }
 #exampleSlider .MS-controls button {
   position: absolute;
