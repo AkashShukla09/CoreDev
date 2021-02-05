@@ -27,7 +27,6 @@ h2{
 }
 
 .column {
-    float: left;
     width: 15%;
     padding-left: 4%;
     display: inline-block;
@@ -214,7 +213,7 @@ i{
 /*Akshat*/
 .services{
   margin-top: 2vw;
-  background-image: url(./globe-bg-img-darkv1.5e7ab89de2b9d2937905.jpg);
+  background-image: url(./galaxy.jpg);
   /*height:100vh;*/
   width: auto;
 }
@@ -431,6 +430,7 @@ i{
     }
 }
 
+
 .hireus form{
   background-color: black;
   color:rgb(211,210,210);
@@ -438,6 +438,7 @@ i{
   padding-left: 10vh;
   margin: 0;
   display: inline-block;
+
 }
 input{
   margin:0.5vh;
@@ -615,6 +616,9 @@ button[type=submit]:hover{
 .box{
   padding-top: 35vh;
 }
+
+
+
 /* Akash contact us  */
 
 .Contact {
@@ -661,10 +665,34 @@ button[type=submit]:hover{
 
 
 /* Balls */
-* {
+/* * {
 	margin: 5px;
 }
 
 canvas {
   border: 1px solid black;
+} */
+
+
+/* Akash our work */
+.OurWork{
+    margin-top:"70vw";
+    margin-bottom:"200vw";
+}
+
+.OurWorkcard{
+  position: center ;
+  margin-top: 2vw;
+  margin-left: 20vw;
+  height: 35vw;
+  width: 55vw;
+  
+
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
 }
