@@ -456,11 +456,60 @@ input{
 }*/
 textarea{
   margin-top: 1vh;
-  height:6vh;
+  height:11vh;
   width:30vh;
   resize: none;
   font-size: 60%;
   font-family: 'Lato';
+}
+textarea:focus,input{
+  outline:none;
+}
+
+.hireus{
+  align-items: center;
+  font-size: 120%;
+}
+.hireus form{
+  padding-left: 9vh;
+}
+.right{
+  display: inline;
+  margin-top: 3vh;
+}
+.checkers{
+  float: left;
+  margin-right:10vw;
+}
+.checkers .contain{
+  margin:3vw 0;
+}
+.hireus input{
+  margin:1vw 0;
+}
+.centerbtn{
+  margin-right:10vw;
+  margin-left:-10vw;
+}
+.hvr-shrink {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+button[type=submit]{
+  display: block;
+  align-self: center;
+  margin-left: 9vw;
 }
 input[type=text],textarea{
   background-color: black;
@@ -715,4 +764,25 @@ canvas{ display: block; vertical-align: bottom; }
   .js-count-particles{ font-size: 1.1em; } #stats, 
   .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } 
   #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } 
-  .count-particles{ border-radius: 0 0 3px 3px; 
+  .count-particles{ border-radius: 0 0 3px 3px; }
+
+  @media screen and (max-width: 600px){
+      .btn{
+          font-size: 70%;
+      }
+      .nav-second:after{
+        width:100%;
+      }
+      .icons{
+        display: block;
+        width: 100%;
+        margin-left: -2vw;
+        padding-top: 0;
+        margin-top: 0;
+      }
+      button[type=submit]{
+        margin-left: 9vw;
+      }
+      
+      
+  }
