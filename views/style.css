@@ -431,14 +431,16 @@ i{
     }
 }
 
-
 .hireus form{
+  color:rgb(211, 210, 210);
+}
+/*.hireus form{
   background-color: black;
   color:rgb(211,210,210);
   font-size: 150%;
   padding-left: 10vh;
   margin: 0;
-  display: inline-block;
+  display: block;
 
 }
 input{
@@ -450,7 +452,7 @@ input{
 .checkers{
   display: inline-block;
   margin-left:30vh;
-}
+}*/
 textarea{
   margin-top: 1vh;
   height:6vh;
@@ -673,16 +675,24 @@ button[type=submit]:hover{
 canvas {
   border: 1px solid black;
 } */
-
+.clearfix{zoom: 1}
+.clearfix:after{
+    content:'.';
+    display:block;
+    clear:both;
+    height:0;
+    visibility: hidden;
+}
 
 /* Akash our work */
 .OurWork{
-    margin-top:"70vw";
-    margin-bottom:"200vw";
+    margin-top:10vw;
+    margin-bottom:50vw;
 }
 
 .OurWorkcard{
   position: center ;
+  display: inline-block;
   margin-top: 2vw;
   margin-left: 20vw;
   height: 35vw;
