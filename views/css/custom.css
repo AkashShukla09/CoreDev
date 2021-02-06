@@ -93,9 +93,9 @@ html h2 {
   }
 }
 #exampleSlider .MS-content .item p {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-align: center;
-  line-height: 1;
+  /*line-height: 1;*/
   vertical-align: middle;
   white-space: nowrap;
   /*margin: 0;*/
