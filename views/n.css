@@ -34,7 +34,7 @@ body{
 /* navbar regular css start */
 .navbar-area {
   background: rgba(0,0,0,.6);
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #F31C13;
 }
 .site-navbar {
   display: flex;
@@ -72,7 +72,7 @@ a.site-logo {
   /*border: 3px solid #fff;*/
   padding: 5px;
   border: none;
-  background-color: black;
+  background-color: transparent;
   cursor: pointer;
   height: 39px;
   display: none;
@@ -95,7 +95,7 @@ a.site-logo {
   transform: translateY(6px);
 }
 .nav-toggler.toggler-open span {
-  background-color: black;
+  background-color: transparent;
 }
 .nav-toggler.toggler-open span:before {
   transform: translateY(0px) rotate(45deg);
@@ -131,6 +131,7 @@ a.site-logo {
   .container2 {
     /*max-width: 720px;*/
     width: 95%;
+    border-bottom: 1px solid #F31C13;
   }
   /* navbar css for mobile start */
   .nav-toggler{
@@ -147,8 +148,9 @@ a.site-logo {
     top: 60px;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #444;
+    /*border-top: 1px solid #444;*/
     background-color: rgba(0,0,0,0.9);
+    backdrop-filter: blur(400px);
     max-height: 0;
     overflow: hidden;
     transition: .3s;
