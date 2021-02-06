@@ -172,14 +172,36 @@
                     -moz-transition: all ease 0.8s;
                     transition: all ease 0.8s;
                 }
-                .site-navbar ul li a:hover {
+                /*.site-navbar ul li a:hover {
                     box-shadow: inset 208px 0 0 0 #F31C13;
-                    /*border: 2px solid #F31C13;*/
                     color: black;
                 }
                 .site-navbar ul li a:active {
                     background: #F31C13;
                     color: black;
+                }*/
+
+                a.left
+                {
+                    position: relative;
+                }
+
+                a.left:before {
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  height: 3px;
+                  bottom: 0;
+                  left: 0;
+                  background-color: #F31C13;
+                  visibility: hidden;
+                  transition: all 0.5s ease-in-out;
+                }
+
+
+                a.left:hover:before {
+                  visibility: visible;
+                  width: 100%;
                 }
                 @media screen and (max-width: 900px) {
                     .site-navbar ul li:hover {
@@ -201,15 +223,15 @@
 
                     <!-- site menu/nav -->
                     <ul>
-                      <li><a href="#header" >Home</a></li>
-                      <li><a href="#SDP">Our Workflow</a></li>
-                      <li><a href="#tech">Technlogies We Use</a></li>
-                      <li><a href="#services">Our Core Services</a></li>
-                      <li><a href="#hireus">Hire Us</a></li>
+                      <li><a href="#header" class="left" >Home</a></li>
+                      <li><a href="#SDP" class="left">Our Workflow</a></li>
+                      <li><a href="#tech" class="left">Technlogies We Use</a></li>
+                      <li><a href="#services" class="left">Our Core Services</a></li>
+                      <li><a href="#hireus" class="left">Hire Us</a></li>
                     </ul>
 
                     <!-- nav-toggler for mobile version only -->
-                    <button class="nav-toggler">
+                    <button class="nav-toggler" >
                       <span></span>
                     </button>
                   </nav>
