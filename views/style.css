@@ -52,6 +52,9 @@ h2{
   margin-bottom: 2vw;
   margin-top: 8vw;
 }
+.SDP h1{
+  font-size: 6vw;
+}
 i{
   color:#fff;
 }
@@ -720,7 +723,7 @@ button[type=submit]:hover{
 }
 @media screen and (max-width: 600px){
   .SDP h1{
-    font-size:50vw;
+    font-size:4.8vw;
     color:#fff;
 
   }
