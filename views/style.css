@@ -27,7 +27,6 @@ h2{
 }
 
 .column {
-    float: left;
     width: 15%;
     padding-left: 4%;
     display: inline-block;
@@ -715,7 +714,36 @@ button[type=submit]:hover{
   color: rgb(207, 207, 207);
   font-family: "Lato";
 }
+@media screen and (max-width: 600px){
+  .SDP h1{
+    font-size:20px;
+    color:#fff;
+  }
+  .column{
+    display: block;
+    width:100%;
+    padding-bottom: 5px;
+  }
+  .column h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding:0;
+    color:#fff;
+  }
+  .SDP p{
+    font-size:16px;
+    font-weight:300;
+  }
+  .column i{
+    font-size:35px;
+    margin-bottom: 10px;
 
+  }
+  .tech a{
+
+  }
+}
 
 /* Balls */
 /* * {
@@ -784,6 +812,11 @@ canvas{ display: block; vertical-align: bottom; }
       }
       .nav-second:after{
         width:100%;
+      }
+      .nav-second a{
+        padding:0;
+        margin:0;
+        font-size: 20px;
       }
       .icons{
         display: block;
