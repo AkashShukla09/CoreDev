@@ -53,21 +53,21 @@ html h2 {
 }
 @media (max-width: 992px) {
   #exampleSlider .MS-content .item {
-    width: 33.3333%;
+    width: 40%;
   }
   .card {
-    height: 38vw;
+    height: 45vw;
     /*width: 80%;*/
   }
 }
 @media (max-width: 767px) {
   #exampleSlider .MS-content .item {
-    width: 45%;
+    width: 50%;
     /*height: 500vw;*/
     /*margin: 0 2vw;*/
   }
   .card {
-    height: 38vw;
+    height: 42vw;
     /*width: 80%;*/
   }
 }
@@ -77,12 +77,12 @@ html h2 {
     margin-right: 2vw;*/
   }
   #exampleSlider .MS-content .item {
-    width: 60%;
+    width: 70%;
     /*height: 50vw;*/
 
   }
   .card {
-    height: 40vw;
+    height: 45vw;
     /*width: 80%;*/
   }
   .card h2{
