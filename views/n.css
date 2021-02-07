@@ -17,7 +17,7 @@ body{
   background-color:rgba(0, 0, 0, 0.514);
   backdrop-filter: blur(4px);
   width: 100%;
-  max-width: 1440px;
+  /*max-width: 1440px;*/
   margin: 0 0;
   padding: 0 15px;
   border-bottom: 1px solid #F31C13;
