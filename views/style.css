@@ -661,12 +661,6 @@ button[type=submit]:hover{
   color:rgb(255, 255, 255);
   padding: 15px 0;
 }
-.header img{
-  height:95vh;
-  width:auto;
-  float:right;
-  padding-right: 5vh;
-}
 .header h2{
   color:white;
   font-weight: 300;
@@ -815,6 +809,22 @@ canvas{ display: block; vertical-align: bottom; }
 
 
   @media screen and (max-width: 600px){
+     .header{
+      margin-top: 20px;
+      height:75vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.911)),url(LandingPage.png);
+      background-size: 100vh;
+      background-repeat: no-repeat;
+      }
+     .header img{
+      display: none;
+      }
+      .header h1,h2{
+        font-size: 5vw;
+      }
+      .header .box{
+        margin-top:20vh;
+      }
       .btn{
           font-size: 70%;
       }
