@@ -734,7 +734,7 @@ canvas {
     visibility: hidden;
 }
 
-/* Akash our work */
+/* Akash  work */
 .OurWork{
     margin-top:10vw;
     margin-bottom:50vw;
@@ -747,6 +747,7 @@ canvas {
   margin-left: 20vw;
   height: 35vw;
   width: 55vw;
+  background-image:url(LITELO (1).png);
   
 
   border-radius: 15px;
@@ -771,7 +772,7 @@ canvas{ display: block; vertical-align: bottom; }
   #particles-js {
     position: absolute;
     width: 98%;
-    height: 550%;
+    height: 500%;
     background: $background;
   }
 
