@@ -288,17 +288,30 @@
         <div class="header" style="padding-top:6.2vh;" id="header">
                 <img src="LandingPage.png">
                 <div class="box">
-                    <h1 style="text-align: left; margin-left: 6vw; font-size: 4.2vw;">CoreDev</h1>
-                    <h2 style="text-align: left; margin-left: 6vw; font-size: 2.2vw;">You Envision, We Deliver.</h2><br><br>
+                    <h1 style="text-align: left; margin-left: 6vw; ">CoreDev</h1>
+                    <h2 style="text-align: left; margin-left: 6vw; ">You Envision, We Deliver.</h2><br><br>
                     <a href="#hireus" class="button">Something In Mind?</a>
                 </div>
          </div>
          
          <style>
+            .header h1{
+                font-size: 4.2vw;
+            }
+            .header h2{
+                font-size: 2.2vw;
+            }
              @media screen and (max-width: 660px){
                  .header .button{
-                     font-size: 50%;
+                     font-size: 70%;
                  }
+                 .header .box h1{
+                    font-size: 5vw;
+                    margin-top: 0vw;
+                  }
+                  .header .box h2{
+                    font-size: 2.5vw;
+                  }
              }
              @media screen and (max-width: 450px){
                  .header .button{
@@ -582,6 +595,40 @@
                        </div>
                        <style>
                            /*LOL*/
+                            @media (max-width: 992px) {
+                                  .card h2{
+                                     font-size: 2.8vw !important;
+                                 }
+                                 .card p{
+                                     font-size: 1.8vw !important;
+                                 }
+                                 .card img{
+                                    width: 25vw;
+                                 }
+                             }
+                             @media (max-width: 767px) {
+                                  .card h2{
+                                     font-size: 3.2vw !important;
+                                 }
+                                 .card p{
+                                     font-size: 2.2vw !important;
+                                 }
+                                 .card img{
+                                    width: 25vw;
+                                 }
+                             }
+                             @media screen and (max-width: 600px){
+                                 .card h2{
+                                     font-size: 3.5vw !important;
+                                 }
+                                 .card p{
+                                     font-size: 2.5vw !important;
+                                 }
+                                 .card img{
+                                    width: 25vw;
+                                 }
+                             }
+                             
                            .card h2{
                                font-weight: 300;
                                font-size:2.5vw;
@@ -635,7 +682,7 @@
                 <!-- Initialize element with Multislider -->
                 <script>
                     $('#exampleSlider').multislider({
-                        interval: 4000,
+                        interval: 40000,
                         slideAll: false,
                         duration: 1000
                     });
