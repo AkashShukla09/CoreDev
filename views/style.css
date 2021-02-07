@@ -4,10 +4,13 @@
       /*display: inline;*/
     }
   }
-
-  body{
+/*html{
+  margin: 0 0;
+}*/
+body{
     background-color: black !important;
     font-family: "Lato";
+    margin: 0 0;
 }
 
 h1{
