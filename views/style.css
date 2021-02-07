@@ -804,7 +804,7 @@ canvas{ display: block; vertical-align: bottom; }
   #particles-js {
     position: absolute;
     width: 98%;
-    height: 200%;
+    height: auto;
     background: $background;
   }
 
