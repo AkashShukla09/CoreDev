@@ -30,6 +30,7 @@ h2{
 }
 
 .column {
+  float:left;
     width: 15%;
     padding-left: 4%;
     display: inline-block;
@@ -723,6 +724,9 @@ button[type=submit]:hover{
     color:#fff;
 
   }
+  .nav-second a{
+    margin-right:5px;
+  }
   .column{
     display: block;
     width:100%;
@@ -742,9 +746,6 @@ button[type=submit]:hover{
   .column i{
     font-size:35px;
     margin-bottom: 10px;
-
-  }
-  .tech a{
 
   }
 }
@@ -804,7 +805,7 @@ canvas{ display: block; vertical-align: bottom; }
   #particles-js {
     position: absolute;
     width: 98%;
-    height: 200%;
+    height: auto;
     background: $background;
   }
 
@@ -821,6 +822,8 @@ canvas{ display: block; vertical-align: bottom; }
         padding:0;
         margin:0;
         font-size: 20px;
+        margin-right: 10px;
+        padding-bottom: 15px;
       }
       .icons{
         display: block;
