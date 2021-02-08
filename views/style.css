@@ -808,11 +808,54 @@ canvas {
 	.span-2-of-2, .span-1-of-2 { width: 100%; }
 }
 
+<<<<<<< Updated upstream
 @media only screen and (max-width:700px){
   .SDP p{
     width:96.5%;
   }
 }
+=======
+.Wcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.Wimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.Wmiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Wcontainer:hover .Wimage {
+  opacity: 0.3;
+}
+
+.Wcontainer:hover .Wmiddle {
+  opacity: 1;
+}
+
+.Wtext {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+>>>>>>> Stashed changes
 
 
 
