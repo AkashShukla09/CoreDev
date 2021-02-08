@@ -798,65 +798,128 @@ canvas {
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 550px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
+/* Our Work 3 */
+@media screen and (max-width: 660px){
+  .Wbutton{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
 }
-
-@media only screen and (max-width: 550px) {
-	.span-2-of-2, .span-1-of-2 { width: 100%; }
-}
-
-<<<<<<< Updated upstream
-@media only screen and (max-width:700px){
-  .SDP p{
-    width:96.5%;
+@media screen and (max-width: 450px){
+  .Wbutton{
+      display:block;
+      width:20%;
   }
 }
-=======
-.Wcontainer {
-  position: relative;
-  width: 50%;
+.Wbutton{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton:hover{
+ background-size: 100% 100%;
 }
 
-.Wimage {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+a, a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-.Wmiddle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+/* @media screen and (max-width: 660px){
+  .Wbutton2{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  .Wbutton2{
+      display:block;
+      width:20%;
+  }
+}
+.Wbutton2{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton2:hover{
+ background-size: 100% 100%;
+}
+ */
+
+@media screen and (max-width: 660px){
+  .Wbutton3{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  .Wbutton3{
+      display:block;
+      width:20%;
+  }
+}
+.Wbutton3{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton3:hover{
+ background-size: 100% 100%;
 }
 
-.Wcontainer:hover .Wimage {
-  opacity: 0.3;
+@media screen and (max-width: 660px){
+  .Wbutton4{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
 }
-
-.Wcontainer:hover .Wmiddle {
-  opacity: 1;
+@media screen and (max-width: 450px){
+  .Wbutton4{
+      display:block;
+      width:20%;
+  }
 }
-
-.Wtext {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.Wbutton4{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
 }
-
->>>>>>> Stashed changes
-
+.Wbutton4:hover{
+ background-size: 100% 100%;
+}
 
 
 /*body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } */
