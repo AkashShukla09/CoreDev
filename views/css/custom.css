@@ -103,10 +103,11 @@ html h2 {
 #exampleSlider .MS-controls button {
   position: absolute;
   padding: 6px 12px;
-  border: 2px solid rgba(211,210,210,0.5);
+  border: 2px solid rgba(243,28,19,0.5);
   border-radius: 1000px;
-  background: rgba(211,210,210,0.5);
-  font-size: 30px;
+  background: rgba(0,0,0,0.9);
+  font-size: 25px;
+  color: black;
   outline: 0;
   top: 15vw;
 }
