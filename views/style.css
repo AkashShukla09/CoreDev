@@ -819,9 +819,6 @@ canvas{ display: block; vertical-align: bottom; }
      .header img{
       display: none;
       }
-      .header h1,h2{
-        font-size: 5vw;
-      }
       .header .box{
         margin-top:20vh;
       }
