@@ -809,6 +809,10 @@ canvas{ display: block; vertical-align: bottom; }
 
 
   @media screen and (max-width: 600px){
+      .services h1{
+        font-size: 22px;
+        padding-left:5%;
+      }
      .header{
       margin-top: 20px;
       height:75vh;
@@ -826,7 +830,7 @@ canvas{ display: block; vertical-align: bottom; }
           font-size: 70%;
       }
       .nav-second:after{
-        width:100%;
+        width:98%;
       }
       .nav-second a{
         padding:0;
