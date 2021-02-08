@@ -766,7 +766,7 @@ canvas {
 }
 
 /* Akash  work */
-.OurWork{
+/* .OurWork{
     margin-top:10vw;
     margin-bottom:50vw;
 }
@@ -778,7 +778,7 @@ canvas {
   margin-left: 20vw;
   height: 35vw;
   width: 55vw;
-  /* background-image:url(LITELO (1).png); */
+
   
 
   border-radius: 15px;
@@ -788,7 +788,54 @@ canvas {
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 
+} */
+
+
+/* Our Work 2 Akash */
+/*  SECTIONS  */
+.Wsection {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
 }
+
+/*  COLUMN SETUP  */
+.Wcol {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.Wcol:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.Wgroup:before,
+.Wgroup:after { content:""; display:table; }
+.Wgroup:after { clear:both;}
+.Wgroup { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.Wspan_2_of_2 {
+	width: 100%;
+}
+.Wspan_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.Wcol { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.Wspan_2_of_2, .Wspan_1_of_2 { width: 100%; }
+}
+
+
+
+
+
 /*body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } */
 canvas{ display: block; vertical-align: bottom; }
   /* ---- particles.js container ---- / #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000;  } / ---- stats.js ---- */ 
@@ -857,3 +904,6 @@ canvas{ display: block; vertical-align: bottom; }
       
       
   }
+
+
+
