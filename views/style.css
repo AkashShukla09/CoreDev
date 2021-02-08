@@ -719,6 +719,7 @@ button[type=submit]:hover{
   .SDP h1{
     font-size:4.8vw;
     color:#fff;
+    font-weight: 600;
 
   }
   .nav-second a{
@@ -812,6 +813,7 @@ canvas{ display: block; vertical-align: bottom; }
       .services h1{
         font-size: 22px;
         padding-left:5%;
+        font-weight: 600;
       }
      .header{
       margin-top: 20px;
@@ -848,6 +850,9 @@ canvas{ display: block; vertical-align: bottom; }
       }
       button[type=submit]{
         margin-left: 9vw;
+      }
+      .tech h1{
+        font-weight: 600;
       }
       
       
