@@ -109,7 +109,7 @@ html h2 {
   font-size: 25px;
   color: black;
   outline: 0;
-  top: 15vw;
+  top: 17vw;
 }
 @media (max-width: 767px) {
   #exampleSlider .MS-controls button {
