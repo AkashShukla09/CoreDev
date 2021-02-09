@@ -836,7 +836,7 @@ a, a:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* @media screen and (max-width: 660px){
+@media screen and (max-width: 660px){
   .Wbutton2{
       font-size: 90%;
       font-weight: 300;
@@ -864,7 +864,7 @@ a, a:hover {
 .Wbutton2:hover{
  background-size: 100% 100%;
 }
- */
+
 
 @media screen and (max-width: 660px){
   .Wbutton3{
@@ -914,7 +914,7 @@ a, a:hover {
  padding:1vw 2vw;
  border:1px solid #1eb824;
  border-radius: 5px;
- margin:5vw 1vw 0vw 6vw ;
+ margin:4vw 0vw 0vw 6vw ;
  background: linear-gradient(to right, #1eb824, #1eb824);
  background-repeat: no-repeat;
  background-size: 0 100%;
