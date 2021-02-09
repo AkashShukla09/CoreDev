@@ -952,7 +952,7 @@
 	 padding: 0;
 	 justify-content: center;
 } */
- .postcard .postcard_tagbox .tag_item {
+/* .postcard .postcard_tagbox .tag_item {
 	 display: inline-block;
 	 background: rgba(83, 83, 83, 0.4);
 	 border-radius: 3px;
@@ -961,6 +961,10 @@
 	 cursor: default;
 	 user-select: none;
 	 transition: background-color 0.3s;
+}*/
+.postcard__tagbox{
+    padding:0;
+    margin:0;
 }
  .postcard .postcard_tagbox .tag_item:hover {
 	 background: rgba(83, 83, 83, 0.8);
@@ -1058,10 +1062,10 @@
 	 background-color: #fe0000;
 }
  .green::before {
-	 background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+	 background-image: linear-gradient(-30deg, rgba(221, 9, 9, 0.1), transparent 50%);
 }
  .green:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+	 background-image: linear-gradient(30deg, rgba(221, 9, 9, 0.1), transparent 50%);
 }
  /* .postcard .postcard__tagbox .blue.play:hover {
 	 background: #1eb824;
@@ -1073,10 +1077,10 @@
 	 background-color: #1eb824;
 }
  .blue::before {
-	 background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+	 background-image: linear-gradient(-30deg, rgba(0, 189, 72, 0.1), transparent 50%);
 }
  .blue:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+	 background-image: linear-gradient(30deg, rgba(0, 189, 72, 0.1), transparent 50%);
 }
  /* .postcard .postcard__tagbox .red.play:hover {
 	 background: #39a1ff;
@@ -1088,10 +1092,10 @@
 	 background-color: #39a1ff;
 }
  .red::before {
-	 background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+	 background-image: linear-gradient(-30deg, rgba(11, 118, 189, 0.1), transparent 50%);
 }
  .red:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+	 background-image: linear-gradient(30deg, rgba(11, 118, 189, 0.1), transparent 50%);
 }
  .postcard .postcard__tagbox .yellow.play:hover {
 	 background: #e67e22;;
@@ -1104,10 +1108,10 @@
 	 background-color:#e67e22;;
 }
  .yellow::before {
-	 background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+	 background-image: linear-gradient(-30deg, rgba(189, 139, 73, 0.1), transparent 50%);
 }
  .yellow:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+	 background-image: linear-gradient(30deg, rgba(189, 139, 73, 0.1), transparent 50%);
 }
  @media screen and (min-width: 769px) {
 	 .green::before {
@@ -1158,7 +1162,7 @@
                     
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">A native android mobile application for the college to manage their daily attendance. What's more you say? Well, it allows you to connect with clubs and get all the academic resources you may need. It is currently being used by more than 1000 first year students of our college.</div>
                 <ul class="postcard__tagbox">
                     <a href="https://play.google.com/store/apps/details?id=com.dev334.litelo" target="_blank" class="Wbutton">Know More</a>
                 </ul>
@@ -1174,7 +1178,7 @@
                     Website
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">Ever had to sit down and think how much to spend in the next week to make to the end of the month without drawing more cash? Well, now stop crunching the numbers, we'll do it for you. MyKhata allows you to track all your expenses and more. It shall provide you with feedback based on your expenditure for the month.</div>
                 <ul class="postcard__tagbox">
                     <a href="http://mykhata.herokuapp.com/"  target="_blank" class="Wbutton2">Know More</a>
                 </ul>
@@ -1190,7 +1194,7 @@
                     Mobile Application
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">A native android mobile application for people to post, follow and short news feed. It also has provision to like, comment and share the news of your liking. It also contains a trending section which shall tell you what's attracting the minds of young thinkers like yours, using our very own algorithm.</div>
                 <ul class="postcard__tagbox">
                     <a href="https://github.com/oneon334/Byte" target="_blank" class="Wbutton3">Know More</a>
                 </ul>
@@ -1206,7 +1210,7 @@
                     Website
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">OmniFood is a curated food delivery service. All you need to do is choose your plans, and the food shall reach your doorstep. Craving for homelike food, well why go for junk when you can have the same homely ambience, just a click away.</div>
                 <ul class="postcard__tagbox">
                     <a href="https://github.com/shinjondas/WebTech_Project" target="_blank" class="Wbutton4">Know More</a>
                 </ul>
