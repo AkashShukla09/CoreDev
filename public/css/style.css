@@ -963,7 +963,7 @@ canvas{ display: block; vertical-align: bottom; }
       margin-top: 20px;
       margin-bottom: 17vh !important;
       height:75vh;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.911)),url(LandingPage.png);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.911)),url(../images/LandingPage.png);
       background-size: 100vh;
       background-repeat: no-repeat;
       }
