@@ -801,18 +801,128 @@ canvas {
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 550px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
+/* Our Work 3 */
+@media screen and (max-width: 660px){
+  .Wbutton{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  .Wbutton{
+      display:block;
+      width:20%;
+  }
+}
+.Wbutton{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton:hover{
+ background-size: 100% 100%;
 }
 
-@media only screen and (max-width: 550px) {
-	.span-2-of-2, .span-1-of-2 { width: 100%; }
+a, a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
+/* @media screen and (max-width: 660px){
+  .Wbutton2{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  .Wbutton2{
+      display:block;
+      width:20%;
+  }
+}
+.Wbutton2{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton2:hover{
+ background-size: 100% 100%;
+}
+ */
 
+@media screen and (max-width: 660px){
+  .Wbutton3{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  .Wbutton3{
+      display:block;
+      width:20%;
+  }
+}
+.Wbutton3{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton3:hover{
+ background-size: 100% 100%;
+}
 
+@media screen and (max-width: 660px){
+  .Wbutton4{
+      font-size: 90%;
+      font-weight: 300;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  .Wbutton4{
+      display:block;
+      width:20%;
+  }
+}
+.Wbutton4{
+ text-decoration: none;
+ color:#fff;
+ padding:1vw 2vw;
+ border:1px solid #1eb824;
+ border-radius: 5px;
+ margin:5vw 1vw 0vw 6vw ;
+ background: linear-gradient(to right, #1eb824, #1eb824);
+ background-repeat: no-repeat;
+ background-size: 0 100%;
+ transition: background-size 1s 0s;
+}
+.Wbutton4:hover{
+ background-size: 100% 100%;
+}
 
 
 /*body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } */
