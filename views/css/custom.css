@@ -124,7 +124,7 @@ html h2 {
 }
 @media (max-width: 992px) {
   #exampleSlider .MS-controls .MS-left {
-    left: -2px;
+    left: 0px;
   }
 }
 #exampleSlider .MS-controls .MS-right {
@@ -132,6 +132,6 @@ html h2 {
 }
 @media (max-width: 992px) {
   #exampleSlider .MS-controls .MS-right {
-    right: -2px;
+    right: 0px;
   }
 }
