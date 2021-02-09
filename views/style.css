@@ -938,8 +938,8 @@ canvas{ display: block; vertical-align: bottom; }
 
   #particles-js {
     position: absolute;
-    width: 98%;
-    height: auto;
+    width: 99%;
+    height:110%;
     background: $background;
   }
 
