@@ -721,9 +721,10 @@ button[type=submit]:hover{
 }
 @media screen and (max-width: 600px){
   .SDP h1{
-    font-size:4.8vw;
+    /*font-size:4.8vw;*/
     color:#fff;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 25px !important;
 
   }
   .nav-second a{
@@ -949,12 +950,18 @@ canvas{ display: block; vertical-align: bottom; }
 
   @media screen and (max-width: 600px){
       .services h1{
-        font-size: 22px;
+        font-size: 25px;
+        /*padding-left:5%;*/
+        font-weight: 400;
+      }
+      #pageHeaderTitle{
+        font-size: 25px !important;
         padding-left:5%;
-        font-weight: 600;
+        font-weight: 400 !important;
       }
      .header{
       margin-top: 20px;
+      margin-bottom: 17vh !important;
       height:75vh;
       background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.911)),url(LandingPage.png);
       background-size: 100vh;
@@ -990,7 +997,11 @@ canvas{ display: block; vertical-align: bottom; }
         margin-left: 9vw;
       }
       .tech h1{
-        font-weight: 600;
+        margin-top: 10vw;
+        font-size: 25px !important;
+        padding-left:5%;
+        font-weight: 400;
+        margin-left: 0vw !important;
       }
       
       
